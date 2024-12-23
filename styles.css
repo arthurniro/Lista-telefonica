@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    background: rebeccapurple;
+}
+
+#lista {
+    color: rgb(255, 255, 255);
+    font-family: "Concert One", serif;
+    font-size: 50px;
+}
+
+#caixa{
+    width: 500px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: "Concert One", serif;
+    color: rgb(93, 6, 173);
+    
+}
+
+#lista-item {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+#botao-enviar {
+    padding: 10px 20px;
+    background-color: rgb(67, 10, 94);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+li.selected {
+    background-color: #d1f7d1;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+  }
+
+li.selected .delete {
+    display: inline-block;
+}
+
+button.delete:hover {
+    background-color: #e53935;
+}

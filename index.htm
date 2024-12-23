@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista Telefonica</title>
+</head>
+<body>
+    <header>
+        <p id="lista">Lista Telefonica</p>
+    </header>
+    <main id="caixa">
+        <div id="lista-numeros">
+            <ul id="lista-item" data-lista="lista-o-item">
+                <li></li>
+            </ul>
+        </div>
+        <div id="manda-numero">
+                <input type="text" name="campo-telefone" id="campo-telefone" data-campo="campo" placeholder="Telefone"> 
+                <button onclick="adicionarTelefone()" id="botao-enviar" data-botao="telefone-enviar">Enviar</button>
+        </div>
+    </main>
+    <script src="./incluirNumeros.js"></script>
+</body>
+</html>
